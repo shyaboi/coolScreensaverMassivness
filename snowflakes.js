@@ -21,7 +21,7 @@ function setup() {
 
 function draw() {
 rgb()
-  background(r2,g2,b2);
+  background('black');
   let t = frameCount / 10; // update time
 
   // create a random number of snowflakes each frame
@@ -71,4 +71,4 @@ function snowflake() {
 }
 setTimeout(function(){
   window.location.href = 'index.html';
-}, 2000);
+}, 20000);
