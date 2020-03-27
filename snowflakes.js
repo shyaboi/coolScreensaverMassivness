@@ -1,15 +1,28 @@
 
 let snowflakes = []; // array to hold snowflake objects
+function rgb(){
+r2 = random(255);
+g2 = random(255);
+b2 = random(255);
+}
+
+// var boop = setInterval(() => {
+//   rgb()
+// }, 2000);
 
 function setup() {
+    rgb()
+  // boop()
+
   createCanvas(1920, 1076);
-  fill(255);
+  fill(r2,g2,b2);
   noStroke();
 }
 
 function draw() {
-  background('brown');
-  let t = frameCount / 60; // update time
+rgb()
+  background(r2,g2,b2);
+  let t = frameCount / 10; // update time
 
   // create a random number of snowflakes each frame
   for (let i = 0; i < random(5); i++) {
@@ -25,6 +38,7 @@ function draw() {
 
 // snowflake class
 function snowflake() {
+  rgb()
   // initialize coordinates
   this.posX = 0;
   this.posY = random(-50, 0);
@@ -57,4 +71,4 @@ function snowflake() {
 }
 setTimeout(function(){
   window.location.href = 'index.html';
-}, 20000);
+}, 2000);

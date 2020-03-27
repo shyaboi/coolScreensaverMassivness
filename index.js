@@ -1,23 +1,38 @@
 
+function rgb() {
+  r2 = random(255);
+  g2 = random(255);
+  b2 = random(255);
+  r = random(255);
+  g = random(255);
+  b = random(255);
+}
+
+
+
+
 function setup() {
   createCanvas(1920, 1076);
-    background(255, 255, 255);
-    r = random(255);
-    g = random(255);
-    b = random(255);
-    // translucent stroke using alpha value
-      
-    
-    stroke(r, g, b);
+ rgb()
+  // translucent stroke using alpha value
+  
+  
+  background(r2,g2,b2);
+  frameRate(1);
   }
   
   function draw() {
+    rgb()
     // draw two random chords each frame
     randomChord();
     randomChord();
+    stroke(r, g, b);
+    strokeWeight(10);
+  
   }
   
   function randomChord() {
+    rgb()
     // find a random point on a circle
     let angle1 = random(0, 2 * PI);
     let xpos1 = 500 + 500 * cos(angle1);
@@ -33,4 +48,4 @@ function setup() {
   }
   setTimeout(function(){
     window.location.href = 'sketch.html';
- }, 20000);
+ }, 400000);
