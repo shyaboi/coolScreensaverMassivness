@@ -48,4 +48,4 @@ function setup() {
   }
   setTimeout(function(){
     window.location.href = 'sketch.html';
- }, 400000);
+ }, 20000);

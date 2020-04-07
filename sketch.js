@@ -74,4 +74,4 @@ function draw() {
 
 setTimeout(function(){
   window.location.href = 'snow.html';
-},200000);
+},2000);
