@@ -56,7 +56,7 @@ function draw() {
   for ( let j = 1; j < num; j++ ) {
       
       let val = j/num * 2040.0 + 511;
-      rgb()
+      // rgb()
     stroke(val);
     stroke(r, g, b);
     
@@ -74,4 +74,4 @@ function draw() {
 
 setTimeout(function(){
   window.location.href = 'snow.html';
-},2000);
+},20000);
